@@ -40,7 +40,7 @@ class SignUpBloc extends Bloc<SignUpEvent, SignUpState> {
       yield* _mapEmailChangedToState(event.email);
     } else if (event is PasswordChanged) {
       yield* _mapPasswordChangedToState(event.password);
-    } else if (event is LoginWithCredentialsPressed) {
+    } else if (event is SignUpWithCredentialsPressed) {
       yield* _mapSignUpWithCredentialsPressedToState(
           email: event.email, password: event.password);
     }

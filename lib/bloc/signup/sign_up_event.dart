@@ -46,11 +46,11 @@ class Submitted extends SignUpEvent {
   List<Object> get props => [password, email];
 }
 
-class LoginWithCredentialsPressed extends SignUpEvent {
+class SignUpWithCredentialsPressed extends SignUpEvent {
   final String email;
   final String password;
 
-  LoginWithCredentialsPressed({required this.email, required this.password});
+  SignUpWithCredentialsPressed({required this.email, required this.password});
 
   @override
   List<Object> get props => [password, email];
